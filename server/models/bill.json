@@ -1,0 +1,43 @@
+{
+  "name": "Bill",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "paid": {
+      "type": "boolean",
+      "default": false
+    },
+    "extra": {
+      "type": "boolean",
+      "default": false
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "confirmation": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number",
+      "default": 0
+    },
+    "paymentLeft": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
